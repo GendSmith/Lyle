@@ -1,0 +1,33 @@
+{
+  "name": "job-admin-backend",
+  "description": "Backend for Personnnel-Management-System",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "prettier": "node_modules/.bin/prettier -.prettierrc -config ./ --loglevel silent --write \"./**/*.js\"",
+    "start": "node app.js",
+    "dev": "node_modules/.bin/nodemon app.js"
+  },
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "cos-nodejs-sdk-v5": "^2.5.1",
+    "ct-mongo": "0.0.2",
+    "ct-mysql": "0.0.2",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "threads": "^0.12.0",
+    "winston": "^3.1.0",
+    "tenpay": "^2.1.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "prettier": "1.10.2"
+  }
+}
