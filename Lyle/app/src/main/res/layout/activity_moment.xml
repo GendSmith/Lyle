@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="320dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/moment_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/cxk"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                />
+
+            <Button
+                android:id="@+id/back_view"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/back"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="pin"
+                android:layout_marginTop="42dp"
+                android:layout_marginLeft="2dp"
+                android:onClick="backProfile"/>
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:fitsSystemWindows="true"
+                android:background="@drawable/camera"
+                android:id="@+id/enter_publish"
+                android:layout_gravity="right"
+                app:layout_collapseMode="pin"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="5dp"
+                android:onClick="enterPublish"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="5dp"/>
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:fitsSystemWindows="true"-->
+                <!--app:layout_collapseMode="pin" />-->
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/cxk"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

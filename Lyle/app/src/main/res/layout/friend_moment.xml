@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/friend_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cxk"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_toRightOf="@id/friend_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/friend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好友昵称"
+                android:textColor="#2CA3E5"/>
+
+            <TextView
+                android:id="@+id/friend_moment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="好友所发状态内容"/>
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/moment_grid"
+            android:layout_below="@id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_alignLeft="@id/linear1">
+
+            <ImageView
+                android:id="@+id/friend_image_1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cxk"
+                />
+            <ImageView
+                android:id="@+id/friend_image_2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cxk"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/friend_image_3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cxk"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/friend_image_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cxk"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/friend_image_5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cxk"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/friend_image_6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cxk"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/friend_image_7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cxk"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/friend_image_8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cxk"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/friend_image_9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cxk"
+                android:visibility="gone"/>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/moment_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moment_grid"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignLeft="@id/linear1"
+            android:layout_marginTop="10dp"
+            android:text="地址"/>
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moment_address"
+            android:layout_alignLeft="@id/linear1"
+            android:layout_marginTop="10dp"
+            android:text="30分钟前"/>
+
+        <Button
+            android:id="@+id/more_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/time_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/more"
+
+            />
+        <com.example.mxz.lyle.LikeView
+            android:id="@+id/like_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:layout_below="@id/more_button"
+
+            android:layout_alignLeft="@+id/time_text"
+            ></com.example.mxz.lyle.LikeView>
+
+        <View
+            android:layout_below="@id/like_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

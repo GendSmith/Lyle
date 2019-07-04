@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/moment"
+        android:title="进入朋友圈"
+        android:icon="@drawable/moment"
+        app:showAsAction="ifRoom" />
+</menu>

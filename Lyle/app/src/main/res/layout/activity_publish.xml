@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_publish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+
+    tools:context="com.example.mxz.lyle.PublishActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@android:color/transparent"
+        android:hint="这一刻的想法..."
+        android:padding="5dp"
+        android:textColorHint="@android:color/black"
+        android:gravity="top"
+        android:textColor="@android:color/black"
+        android:id="@+id/publish_text"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/publish_text"
+        android:id="@+id/address_icon"
+        android:src="@drawable/location"/>
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/publish_text"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        android:hint="所在位置"
+        android:layout_toRightOf="@id/address_icon"
+
+        />
+
+    <GridView
+        android:id="@+id/image_grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:horizontalSpacing="@dimen/activity_horizontal_margin"
+        android:verticalSpacing="@dimen/activity_vertical_margin"
+        android:numColumns="3"
+        ></GridView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res-a/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--tools:context="com.example.mxz.lyle.PublishActivity">-->
+
+    <!--<android.support.design.widget.AppBarLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:theme="@style/AppTheme.AppBarOverlay"-->
+    <!--&gt;-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:background="@android:color/white"-->
+    <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+
+    <!--<include layout="@layout/content_publish" />-->
+
+
+
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->
